@@ -6,9 +6,8 @@ const isApp = !!getClientConfig()?.isApp;
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: isApp
-      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "欢迎使用AI助手！请填写聊天密码后开始使用
+    Unauthorized:
+     "欢迎使用AI助手！请填写聊天密码后开始使用
       
       关注公众号《魔法星系》免费领取最新聊天密码
   
