@@ -14,6 +14,7 @@ const cn = {
     Title: "需要密码",
     Tips: "管理员开启了密码验证，请在下方填入聊天密码",
     Input: "在此处填写聊天密码",
+    SubTips: "或者输入你的 OpenAI API 密钥",
     Confirm: "确认",
     Later: "稍后再说",
   },
