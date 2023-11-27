@@ -6,18 +6,14 @@ const isApp = !!getClientConfig()?.isApp;
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-     "欢迎使用AI助手！请填写聊天密码后开始使用
-      
-      关注公众号《魔法星系》免费领取最新聊天密码
-  
-      领取密码后，[点击这里](/#/auth)填写密码即可使用",
+    Unauthorized: isApp
+      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
+      : "欢迎使用AI助手！请填写正确的聊天密码后开始聊天，关注公众号《魔法星系》可免费领取最新聊天密码，然后[点击这里](/#/auth)填写聊天密码，即可开始聊天！",
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
-    SubTips: "或者输入你的 OpenAI API 密钥",
-    Input: "在此处填写访问码",
+    Tips: "管理员开启了密码验证，请在下方填入聊天密码",
+    Input: "在此处填写聊天密码",
     Confirm: "确认",
     Later: "稍后再说",
   },
