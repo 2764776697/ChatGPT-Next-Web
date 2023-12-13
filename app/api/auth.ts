@@ -42,7 +42,7 @@ export function auth(req: NextRequest) {
   if (serverConfig.needCode && !serverConfig.codes.has(hashedCode) && !apiKey) {
     return {
       error: true,
-      msg: !accessCode ? "empty access code" : "wrong access code",
+      msg: !accessCode ? "未填写密码，请填写密码后使用" : "密码错误，请检查是否填写正确",
     };
   }
 
