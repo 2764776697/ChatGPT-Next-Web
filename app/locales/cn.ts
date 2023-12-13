@@ -8,7 +8,7 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "关注公众号《魔法星系》可领取最新聊天密码\n[点击这里填写密码](/#/auth)",
+      : "关注公众号《魔法星系》可领取最新聊天密码\n\n[点击这里填写密码](/#/auth)",
   },
   Auth: {
     Title: "需要密码",
